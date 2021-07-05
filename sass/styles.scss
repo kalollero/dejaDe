@@ -1,0 +1,62 @@
+//Media Queries
+@import "_media_queries.scss";
+
+/* ================================
+		ESTILOS GENERALES
+=================================*/
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
+
+
+	.hidden {
+		position: absolute;
+		overflow: hidden;
+		width: 0;
+		height: 0;
+		pointer-events: none;
+	}
+
+
+	.nav { z-index: 18;}
+	.home { z-index: 16;}
+	.navegacion { z-index: 14;}
+	.about,
+	.video,
+	.gallery,
+	.frase,
+	.contacto,
+	.footer { z-index: 8;}
+
+	.playFair {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+	}
+
+
+
+/* ================================
+		INICIAN MÓDULOS
+=================================*/
+
+/* -------- Home --------*/
+@import "_home.scss";
+
+/* -------- About --------*/
+@import "_about.scss";
+
+/* -------- Contenido --------*/
+@import "_contenido.scss";
+
+/* -------- Video --------*/
+@import "_video.scss";
+
+/* -------- Autoras --------*/
+@import "_autoras.scss";
+
+/* -------- tiendas --------*/
+@import "_tiendas.scss";
+
+/* -------- footer --------*/
+@import "_footer.scss";
+
+
