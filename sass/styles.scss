@@ -16,27 +16,63 @@
 		pointer-events: none;
 	}
 
+	// frase
+	.frasePistache {fill: var(--pistache);}
+	.fraseAhuesado {fill: var(--ahuesado);}
 
-	.nav { z-index: 18;}
-	.home { z-index: 16;}
-	.navegacion { z-index: 14;}
-	.about,
-	.video,
-	.gallery,
-	.frase,
-	.contacto,
-	.footer { z-index: 8;}
+	// gandhi
+	.gandhi_st0{fill:#222222;}
+	.gandhi_st1{fill:#FBFBFB;}
+
+	// amazon
+	.amazon_st0{fill:#222222;}
+	.amazon_st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FF9900;}
+	.amazon_st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FBFBFB;}
+	.amazon_st3{fill:#FBFBFB;}
+
+
+	//barnes & noble
+	.barnesNoble_st0{fill:#222222;}
+	.barnesNoble_st1{fill:#FBFBFB;}
+	.barnesNoble_st2{fill:#B65514;}
+
+
+	.nav { z-index: 20;}
+	.home { z-index: 18;}
+	.about { z-index: 16;}
+	.video { z-index: 16;}
+	.gallery { z-index: 16;}
+	.frase { z-index: 16;}
+	.contacto { z-index: 16;}
+	.footer { z-index: 16;}
 
 	.playFair {
 		font-family: 'Playfair Display', serif;
 		font-weight: 400;
 	}
 
+	.home,.about,.video,.gallery,.frase,.contacto,.footer {
+		@include sm {
+		}
+
+		@include md {	
+		}
+
+		@include lg {
+			
+		}
+	}
+
+
+
 
 
 /* ================================
 		INICIAN MÓDULOS
 =================================*/
+
+/* -------- nav --------*/
+@import "_nav.scss";
 
 /* -------- Home --------*/
 @import "_home.scss";

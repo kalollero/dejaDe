@@ -1,5 +1,55 @@
 .home {
 	height: 100vh;
 	width: 100vw;
-	background-color: var(--oxford)
+	background: radial-gradient(circle at 50% -25%, #d9ecc7 10%, #07a3b2 100%);	
+
+	@include sm {
+	}
+
+	@include md {
+
+	}
+
+	@include lg {
+		padding: 2rem;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+
+		&__frase {
+			grid-column: 5/9;
+			grid-row: 2/5;
+			// width: auto;
+			// height: auto;
+			// padding: 0 30%;
+			// display: flex;
+			// flex-flow: column;
+			// justify-content: center;
+			// align-content: center;	
+
+			img {
+					width: auto;
+					max-height: max-content;
+			}		
+		}
+
+		&__tiendas {
+			grid-column: 4/10;
+			grid-row: 6/7;
+			// width: auto;
+			// height: auto;
+			// padding: 0 30%;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-content: flex-start;
+
+			img {
+				width: 15%;
+				margin: 0 1rem;
+			}
+		}
+	}
+
+
 }

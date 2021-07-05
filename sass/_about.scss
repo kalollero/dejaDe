@@ -1,5 +1,67 @@
 .about {
-	height: 100vh;
+	// height: 100vh;
 	width: 100vw;
-	background-color: var(--marfil)
+	background-color: var(--ahuesado);
+	// display: flex;
+	// flex-flow: column;
+	// justify-content: center;
+	// align-items: center;
+
+	@include sm {
+	}
+
+	@include md {
+	}
+
+	@include lg {
+		padding: 4rem 3rem 0rem 3rem;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+
+			&__frase {
+				grid-column: 1/2;
+				grid-row: 1/2;
+			}
+
+			&__prefacio {
+				grid-column: 4/10;
+				grid-row: 2/6;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+
+				h4 {
+					text-align: center;
+					margin: 1rem;
+				}
+
+				h5 {
+					text-align: center;
+					margin: 2rem;
+				}
+
+				em {
+					color: var(--pistache);
+					font-weight: 700;
+				}
+			}
+
+			&__linea {
+				grid-column: 6/8;
+				grid-row: 6/7;
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				margin: 1rem 0 0 0;
+
+				div {
+					width: 2px;
+					height: 100%;
+					background-color: var(--profundo);
+				}
+			}
+	}
 }
