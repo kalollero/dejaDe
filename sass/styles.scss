@@ -8,6 +8,8 @@
 	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
 
 
+	a {cursor: pointer;}
+
 	.hidden {
 		position: absolute;
 		overflow: hidden;
@@ -39,19 +41,17 @@
 
 	.nav { z-index: 20;}
 	.home { z-index: 18;}
-	.about { z-index: 16;}
-	.video { z-index: 16;}
-	.gallery { z-index: 16;}
-	.frase { z-index: 16;}
-	.contacto { z-index: 16;}
-	.footer { z-index: 16;}
+	.about { z-index: 18;}
+	.video { z-index: 18;}
+	
+	.footer { z-index: 18;}
 
 	.playFair {
 		font-family: 'Playfair Display', serif;
 		font-weight: 400;
 	}
 
-	.home,.about,.video,.gallery,.frase,.contacto,.footer {
+	.home,.about,.video,.footer {
 		@include sm {
 		}
 
@@ -80,17 +80,17 @@
 /* -------- About --------*/
 @import "_about.scss";
 
-/* -------- Contenido --------*/
-@import "_contenido.scss";
-
 /* -------- Video --------*/
 @import "_video.scss";
 
 /* -------- Autoras --------*/
-@import "_autoras.scss";
+@import "_writers.scss";
+
+/* -------- Autoras --------*/
+@import "_reviews.scss";
 
 /* -------- tiendas --------*/
-@import "_tiendas.scss";
+@import "_bookStores.scss";
 
 /* -------- footer --------*/
 @import "_footer.scss";

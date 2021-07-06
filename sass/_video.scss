@@ -1,5 +1,25 @@
 .video {
-	height: 100vh;
+	height: auto;
 	width: 100vw;
-	background-color: var(--ahuesado),
+	background-color: var(--ahuesado);
+
+
+
+
+
+	@include sm {
+	}
+
+	@include md {	
+	}
+
+	@include lg {
+		
+		iframe {
+			width: 100vw;
+			min-height: 95vh;
+		}
+	}
+
+
 }

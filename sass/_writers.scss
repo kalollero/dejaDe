@@ -1,0 +1,28 @@
+.writers {
+	height: 100vh;
+	width: 100vw;
+
+
+
+	@include sm {
+	}
+
+	@include md {	
+	}
+
+	@include lg {
+		
+		&__menu {
+			width: 100vw;
+			height: 100vh;
+			background: url(/img/two-girls.webp) no-repeat top center;
+			background-size: cover;
+			padding: 0 4rem;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			align-items: center;
+
+		}
+	}
+}
