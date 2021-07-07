@@ -41,26 +41,16 @@
 
 	.nav { z-index: 20;}
 	.home { z-index: 18;}
-	.about { z-index: 18;}
-	.video { z-index: 18;}
+	.about { z-index: 16;}
+	.video { z-index: 16;}
+	.gallery { z-index: 16;}
+	.frase { z-index: 16;}
+	.contacto { z-index: 16;}
+	.footer { z-index: 16;}
 	
-	.footer { z-index: 18;}
 
-	.playFair {
-		font-family: 'Playfair Display', serif;
-		font-weight: 400;
-	}
-
-	.home,.about,.video,.footer {
-		@include sm {
-		}
-
-		@include md {	
-		}
-
-		@include lg {
-			
-		}
+	.nav, .home, .about, .video, .writers, .reviews, .bookStores, .footer{
+		max-width: 100%;
 	}
 
 

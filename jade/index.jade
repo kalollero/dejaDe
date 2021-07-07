@@ -611,10 +611,10 @@ html(lang='en')
 		section.home#home
 			div.home__title
 				img(src="img/frase-ahuesado.svg")
-			//- div.home__phrase
-			//- 	| no es lo que estas dispuesto a ser, sino lo que estas comprometid@ a elegir.
-			//- div.home__callToAction
-			//- 	| ¡Nuestro libro ya está disponible!
+			div.home__phrase
+				h1 no es lo que estas dispuesto a ser, sino lo que estas comprometid@ a elegir.
+			div.home__callToAction
+				h3 ¡Nuestro libro ya está disponible!
 			div.home__bookstores
 				a(href="#")
 					img(src="img/ghandi_01.svg")
@@ -625,7 +625,6 @@ html(lang='en')
 				a(href="#")
 					img(src="img/amazon_01.svg")
 			div.home__bookCover
-				img(src="img/BookCover.webp")
 			
 			
 		section.about#about
@@ -660,17 +659,21 @@ html(lang='en')
 				div
 
 		section.video#video
-			iframe(src="https://www.youtube.com/embed/wB41SFS-KRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+			iframe(src="https://www.youtube.com/embed/wB41SFS-KRs" width="100%" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 				
 		section.writers#writers
 
 			div.writers__menu
 				div.writers__lucyCastillo
-					h4 Lucy Castillo
+					h3 Lucy Castillo
+					a(href="#")
+						h6 BIO
 
 
 				div.writers__vanessaCano
-					h4 Vanessa Cano
+					h3 Vanessa Cano
+					a(href="#")
+						h6 BIO
 
 			//- div.writers__lucyCastillo
 			//- 	h4 Lucy Castillo
@@ -694,13 +697,22 @@ html(lang='en')
 			//- 	div.writers__socialNetworks
 
 		section.reviews#reviews
-			div.reviews
+			div.review
 				img
 				h4 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				h5 Ana L. N. De La Luz
-				h6 EDITOR IN CHIEF
+				p EDITOR IN CHIEF
 
-		//- section.bookStores#bookStores
+		section.bookStores#bookStores
+			div.home__bookstores
+				a(href="#")
+					img(src="img/ghandi_01.svg")
+				a(href="#")
+					img(src="img/amazon_01.svg")
+				a(href="#")
+					img(src="img/barnes_&_noble_01.svg")
+				a(href="#")
+					img(src="img/amazon_01.svg")
 
 		//- footer.footer
 
