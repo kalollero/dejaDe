@@ -1,0 +1,47 @@
+.description {
+	background-color: var(--blanco);
+	// min-height: 100vh;
+
+	@include sm {
+		
+	}
+
+	@include md {
+		
+	}
+
+	@include lg {
+		grid-template-rows: 4rem auto 0rem;
+		grid-column-gap: 1rem;
+		
+
+		&__content {
+			grid-column: 5/11;
+			grid-row: 2/3;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		&__logoVerde {
+			height: 15vh;
+		}
+				
+		&__summary {
+			p { 
+				font-size: 1.5rem; 
+				text-align: center;
+				margin-top: 1rem;
+			}
+
+			em { color: var(--verdeIntenso); }
+		}
+
+		&__line {
+			width: 2px;
+			background-color: var(--negro);
+			height: 20vh;
+			margin: 2rem 0 0;
+		}
+	}
+}

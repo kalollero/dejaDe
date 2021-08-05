@@ -1,0 +1,45 @@
+.stores {
+
+
+
+	@include sm {
+		
+	}
+
+	@include md {
+		
+	}
+
+
+	@include lg {
+		height: 100vh;
+		background: url(../img/bookStores.webp) no-repeat 60% 50%;
+    	background-size: cover;
+    	grid-template-rows: 2rem auto 2rem;
+		grid-column-gap: 1rem;
+
+		&__info {
+			grid-column: 2/7;
+			grid-row: 2/3;
+			align-self: center;
+		}
+		
+
+		&__shop {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+			
+			h4 {
+				font-family: 'Playfair Display', serif;
+				text-align: right;
+				font-style: italic;
+				color: var(--blanco);
+				margin-bottom: 1rem;
+			}
+
+			.stores__content { display: flex; }
+		}
+	}
+}

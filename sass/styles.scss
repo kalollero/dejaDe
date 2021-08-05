@@ -2,64 +2,11 @@
 @import "_media_queries.scss";
 
 /* ================================
-		ESTILOS GENERALES
-=================================*/
-	@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
-
-
-	a {cursor: pointer;}
-
-	.hidden {
-		position: absolute;
-		overflow: hidden;
-		width: 0;
-		height: 0;
-		pointer-events: none;
-	}
-
-	// frase
-	.frasePistache {fill: var(--pistache);}
-	.fraseAhuesado {fill: var(--ahuesado);}
-
-	// gandhi
-	.gandhi_st0{fill:#222222;}
-	.gandhi_st1{fill:#FBFBFB;}
-
-	// amazon
-	.amazon_st0{fill:#222222;}
-	.amazon_st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FF9900;}
-	.amazon_st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FBFBFB;}
-	.amazon_st3{fill:#FBFBFB;}
-
-
-	//barnes & noble
-	.barnesNoble_st0{fill:#222222;}
-	.barnesNoble_st1{fill:#FBFBFB;}
-	.barnesNoble_st2{fill:#B65514;}
-
-
-	.nav { z-index: 20;}
-	.home { z-index: 18;}
-	.about { z-index: 16;}
-	.video { z-index: 16;}
-	.gallery { z-index: 16;}
-	.frase { z-index: 16;}
-	.contacto { z-index: 16;}
-	.footer { z-index: 16;}
-	
-
-	.nav, .home, .about, .video, .writers, .reviews, .bookStores, .footer{
-		max-width: 100%;
-	}
-
-
-
-
-
-/* ================================
 		INICIAN MÓDULOS
 =================================*/
+/* -------- base --------*/
+@import "_estilosGenerales.scss";
+
 
 /* -------- nav --------*/
 @import "_nav.scss";
@@ -70,17 +17,20 @@
 /* -------- About --------*/
 @import "_about.scss";
 
+/* -------- Description --------*/
+@import "_description.scss";
+
 /* -------- Video --------*/
 @import "_video.scss";
 
-/* -------- Autoras --------*/
+/* -------- Writers --------*/
 @import "_writers.scss";
 
-/* -------- Autoras --------*/
-@import "_reviews.scss";
+/* -------- Reviews --------*/
+// @import "_reviews.scss";
 
-/* -------- tiendas --------*/
-@import "_bookStores.scss";
+/* -------- Stores --------*/
+@import "_stores.scss";
 
 /* -------- footer --------*/
 @import "_footer.scss";

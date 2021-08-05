@@ -1,5 +1,55 @@
 .footer {
-	height: 100vh;
-	width: 100vw;
-	background-color: var(--ahuesado)
+	background-color: var(--negro);
+
+
+	@include sm {
+		
+	}
+
+	@include md {
+		
+	}
+
+	@include lg {
+
+		grid-template-rows: 4rem auto auto auto 4rem;
+		grid-column-gap: 1rem;
+		min-height: 40vh;
+
+		&__frase,
+		&__nav,
+		&__socialNetworks {
+			grid-column: 2/14;
+		}
+
+		&__frase {
+			grid-row: 2/3;
+			justify-self: center;
+			width: 25vw;
+		}
+
+		&__nav {
+			grid-row: 3/4;
+			justify-self: center;
+			display: flex;
+			margin: .5rem 0;
+
+			a { 
+				color: var(--gray);
+				font-family: 'Roboto', sans-serif;
+			}
+
+			div { 
+				color: var(--gray);
+				margin: 0 0.5rem; 
+			}
+
+		}
+		&__socialNetworks {
+			grid-row: 4/5;
+			justify-self: center;
+			a { margin: 0 0.5rem; }
+		}
+
+	}
 }

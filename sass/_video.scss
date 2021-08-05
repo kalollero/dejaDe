@@ -1,25 +1,32 @@
 .video {
-	height: auto;
 	width: 100vw;
-	background-color: var(--ahuesado);
-
-
-
-
+	// align-self: center;
+	background-color: #000000;
 
 	@include sm {
+		
 	}
 
-	@include md {	
+	@include md {
+		
 	}
 
 	@include lg {
-		
-		iframe {
-			max-width: 100vw;
-			min-height: 95vh;
+		height: 100vh;
+
+		&__play { 
+			grid-column: 2/14;
+			align-self: center;
+  			justify-self: center;	
+			width: 5vw;
+			// display: none;
+		}
+
+		&__autoras {
+			grid-column: 2/14;
+			width: 100%; 
+			height: 100%;
+			display: none;
 		}
 	}
-
-
 }
