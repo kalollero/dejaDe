@@ -12,6 +12,20 @@
 
 
 html,body {
+	
+}
+
+:root {
+	--verde: #00B3A1;
+	--verdeOscuro: #1B3537;
+	--azul: #3c4fa8;
+	--blanco: #FBFBFB;
+	--negro: #1B2728;
+
+	--verdePistache: #57D9BA;
+	--verdeIntenso: #00C1A1;
+	--gray: #DBE2E9;
+
 	font-size: 16px;
 
 	@include sm {
@@ -42,9 +56,9 @@ html,body {
 .foote { z-index: 16; }
 
 
-.nav {}
-
+.nav,
 .home,
+.book,
 .about,
 .description,
 .video,
@@ -54,7 +68,7 @@ html,body {
 .reviews,
 .stores,
 .footer {
-	width: 100vw;
+	width: 100%;
 	display: grid;
 
 	@include sm {
