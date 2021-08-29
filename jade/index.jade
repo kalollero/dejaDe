@@ -53,9 +53,7 @@ html(lang='en')
 					div.circle
 		
 		section.home#home
-
-			
-			
+		
 			section.book#book
 				
 				div.book__logoBanner
@@ -69,12 +67,24 @@ html(lang='en')
 							i.fab.fa-youtube
 
 				div.book__title
-					img.title(src="img/title.svg")
+					//- img.title(src="img/title.svg")
+					h1 NO ES LO QUE 
+						br
+						| ESTÁS DISPUESTO
+						br
+						| A HACER, SINO
+						br
+						| LO QUE ESTÁS
+						br
+						span COMPROMETI@
+						br
+						span A ELEGIR.
+
 					a.home__button(href="")
 						svg.svg-inline--fa.fa-long-arrow-right(aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512")
 							path(fill="currentColor" d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z")
-							p.linkComprar
-								small COMPRAR
+						p.linkComprar
+							small COMPRAR
 		
 			section.about#about
 				div.about__info
@@ -143,8 +153,16 @@ html(lang='en')
 			//- img.video__play(src="img/play.svg")
 			iframe.video__autoras(src="https://www.youtube.com/embed/wB41SFS-KRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 		
-		//- section.writers#writers
+		section.writers#writers
 			div.writers__nav
+				div.lucy__link
+					p Lucy Castillo
+					P ESCRITORA
+					a BIO
+				div.vanessa__link
+					p Vanessa Cano
+					P ESCRITORA
+					a BIO
 
 			div.writers__lucyCastillo
 				div.lucyCastillo__content
@@ -229,8 +247,7 @@ html(lang='en')
 					i.fab.fa-youtube
 
 
-		//- script(src='https://unpkg.com/@popperjs/core@2.9.3/dist/umd/popper.min.js')
-		//- script(src='https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.min.js')
+		
 		script(src='js/type.js' type='text/javascript')
 			
 
