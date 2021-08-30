@@ -3,7 +3,7 @@
 
 	.book {
 		&__title h1 {
-			font-family: alternate_gothic_no3;
+			font-family: var(--fuenteH1);
 			text-align: left;
 			color: var(--blanco);	
 		}
@@ -77,14 +77,14 @@
 					justify-content: center;
 					align-items: center;
 					background-color: var(--blanco);
-					// padding: .25rem 2rem .25rem 2rem;
 					height: 3rem;
 					width: 12rem;
-					// border-radius: 16px;
-
+					color: var(--verdeOscuro);
 
 					p.linkComprar { 
 						color: var(--verdeOscuro);
+						// font-size: 1.25rem;
+						// letter-spacing: 1.5;
 					}
 
 					svg.fa-long-arrow-right {

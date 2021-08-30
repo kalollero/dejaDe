@@ -40,8 +40,11 @@ html,body {
 	--verdeIntenso: #00C1A1;
 	--gray: #DBE2E9;
 
-	--AG2: "alternate_gothic_no2";
-	--AG3: "alternate_gothic_no3";
+	--fuenteH1: "alternate_gothic_no3";
+	--fuenteTitulos: "Roboto";
+	--fuenteTexto: "Playfair Display";
+	--fuenteBotones: "alternate_gothic_no3";
+
 
 
 
@@ -128,7 +131,7 @@ em {
 //////// LINKS ////////
 
 a {
-	font-family: var(--AG3), sans-serif;
+	font-family: var(--fuenteBotones), sans-serif;
 	font-weight: 700;
 	font-size: 1.25rem;
 	letter-spacing: 1.5;

@@ -81,17 +81,17 @@ html(lang='en')
 						br
 						span A ELEGIR.
 
-					a.home__button(href="")
+					a.home__button(href="") LEER
 						//- svg.svg-inline--fa.fa-long-arrow-right(aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512")
 							path(fill="currentColor" d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z")
-						p.linkComprar LEER
+						//- p.linkComprar LEER
 		
 			section.about#about
 				div.about__info
-					div
+					//- div
 						p.about__anteTitulo Titulo
 						p.about__titulo ¿Y SI DEJAS DE HACERTE PENDEJ@?
-					div
+					//- div
 						p.about__anteTitulo Autoras
 						p.about__titulo Lucy Castilo & Vanessa Cano
 					div
@@ -103,17 +103,17 @@ html(lang='en')
 					div
 						P.about__anteTitulo Dimensiones
 						p.about__titulo 13.97 x 0.69 x 21.59 cm
-					div
+					//- div
 						p.about__anteTitulo ISBN-13
 						p.about__titulo 979-8528581705
 					div
 						p.about__anteTitulo Disponible en
 						div.about__stores
-							a(href="")
+							a(href="https://www.amazon.com.mx/dp/B098BM85RN/ref=dp_kinw_strp_1")
 								img.store__amazonOscuro(src="img/amazonOscuro.svg")
-							a(href="")
+							a(href="https://www.gandhi.com.mx/y-si-dejas-de-hacerte-pendejat")
 								img.store__gandhiOscuro(src="img/gandhiOscuro.svg")
-							a(href="")
+							a(href="https://www.barnesandnoble.com/w/y-si-dejas-de-hacerte-pendej-lucy-castillo/1139758691?ean=2940164692001")
 								img.store__barnesOscuro(src="img/barnesOscuro.svg")
 							a(href="https://books.apple.com/mx/book/y-si-dejas-de-hacerte-pendej/id1574351932")
 								img.store__ibookOscuro(src="img/ibookOscuro.svg")
@@ -155,14 +155,14 @@ html(lang='en')
 		
 		section.writers#writers
 			div.writers__nav
-				div.lucy__link
-					p Lucy Castillo
-					P ESCRITORA
-					a BIO
-				div.vanessa__link
-					p Vanessa Cano
-					P ESCRITORA
-					a BIO
+				//- div.lucy__link
+					div
+						h2 Lucy Castillo
+						//- a BIO
+				//- div.vanessa__link
+					div
+						h2 Vanessa Cano
+						//- a BIO
 
 			//- div.writers__lucyCastillo
 				div.lucyCastillo__content
@@ -215,35 +215,35 @@ html(lang='en')
 				div.stores__shop
 					p Disponible en
 					div.stores__content
-						a(href="")
+						a(href="https://www.amazon.com.mx/dp/B098BM85RN/ref=dp_kinw_strp_1")
 							img.store__amazonClaro(src="img/amazonClaro.svg")
-						a(href="")
+						a(href="https://www.gandhi.com.mx/y-si-dejas-de-hacerte-pendejat")
 							img.store__gandhiClaro(src="img/gandhiClaro.svg")
-						a(href="")
+						a(href="https://www.barnesandnoble.com/w/y-si-dejas-de-hacerte-pendej-lucy-castillo/1139758691?ean=2940164692001")
 							img.store__barnesClaro(src="img/barnesClaro.svg")
-						a(href="")
+						a(href="https://books.apple.com/mx/book/y-si-dejas-de-hacerte-pendej/id1574351932")
 							img.store__ibookClaro(src="img/ibookClaro.svg")
 		
 		footer.footer
 			img.footer__frase(src="img/fraseClaro.svg")
 			div.footer__nav
-				a(href="") Inicio
+				a(href="#home") Inicio
 				div ·
-				a(href="") Acerca del Libro
+				a(href="#about") Acerca del Libro
 				div ·
-				a(href="") Sinopsis
+				a(href="#description") Sinopsis
 				div ·
-				a(href="") Autoras
+				a(href="#writers") Autoras
 				div ·
-				a(href="") Reseñas
-				div ·
-				a(href="") Que esperas
+				//- a(href="reviews") Reseñas
+				//- div ·
+				a(href="#stores") Que esperas Leer
 			div.footer__socialNetworks
 				a(href="")
 					i.fab.fa-facebook-square
 				a(href="")
 					i.fab.fa-instagram
-				a(href="")
+				//- a(href="")
 					i.fab.fa-youtube
 
 

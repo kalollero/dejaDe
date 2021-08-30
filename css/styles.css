@@ -26,8 +26,10 @@
   --verdePistache: #57D9BA;
   --verdeIntenso: #00C1A1;
   --gray: #DBE2E9;
-  --AG2: "alternate_gothic_no2";
-  --AG3: "alternate_gothic_no3";
+  --fuenteH1: "alternate_gothic_no3";
+  --fuenteTitulos: "Roboto";
+  --fuenteTexto: "Playfair Display";
+  --fuenteBotones: "alternate_gothic_no3";
 }
 .nav {
   z-index: 20;
@@ -153,7 +155,7 @@ em {
 }
 
 a {
-  font-family: var(--AG3), sans-serif;
+  font-family: var(--fuenteBotones), sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 1.5;
@@ -230,7 +232,7 @@ a {
   background-color: var(--verde);
 }
 .home .book__title h1 {
-  font-family: alternate_gothic_no3;
+  font-family: var(--fuenteH1);
   text-align: left;
   color: var(--blanco);
 }
@@ -320,6 +322,7 @@ a {
     background-color: var(--blanco);
     height: 3rem;
     width: 12rem;
+    color: var(--verdeOscuro);
   }
   .home .book__title a.home__button p.linkComprar {
     color: var(--verdeOscuro);
@@ -511,7 +514,52 @@ a {
     grid-column-gap: 1rem;
   }
   .writers__nav {
-    background-image: url(../img/bookStores.webp);
+    background-image: url(../img/IMG-20210824-WA0000.jpg);
+    background-color: #1b35371a;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .writers .lucy__link,
+.writers .vanessa__link {
+    width: 35%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .writers .lucy__link h2,
+.writers .vanessa__link h2 {
+    line-height: 1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--blanco);
+  }
+  .writers .lucy__link a,
+.writers .vanessa__link a {
+    color: var(--blanco);
+  }
+  .writers .lucy__link {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
@@ -601,8 +649,7 @@ a {
     margin: 0.5rem 0;
   }
   .footer__nav a {
-    color: var(--gray);
-    font-family: "Roboto", sans-serif;
+    color: var(--blanco);
   }
   .footer__nav div {
     color: var(--gray);

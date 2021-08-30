@@ -21,8 +21,47 @@
 		}
 
 		&__nav{
-			background-image: url(../img/bookStores.webp);
+			background-image: url(../img/IMG-20210824-WA0000.jpg);
+			background-color: #1b35371a;
+			background-blend-mode: multiply;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center top;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 		}
+
+		.lucy__link,
+		.vanessa__link {
+			width: 35%;
+			height: 80%;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-end;
+			// border: 1px orange solid;
+
+			h2 {
+				line-height: 1;
+				font-size: 1.5rem;
+				font-weight: 700;
+				color: var(--blanco);
+			}
+
+			a {
+				color: var(--blanco);
+			}
+		}
+
+		.lucy__link {	
+			align-items: flex-end;
+		}
+
+		.vanessa__link {
+
+		}
+
+
 
 		// &__lucyCastillo {
 		// 	background: url(../img/lucyCastillo.webp) no-repeat right center;
