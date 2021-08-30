@@ -11,57 +11,59 @@
 
 	@include lg {
 
-		&__nav,
-		&__lucyCastillo,
-		&__vanessaCano {
+		
+		// &__lucyCastillo,
+		// &__vanessaCano 
+		&__nav {
 			height: 100vh;
 			grid-template-rows: 1rem auto 1rem;
 			grid-column-gap: 1rem;
 		}
 
 		&__nav{
-			background-color: var(--azul);
+			background-image: url(../img/bookStores.webp);
 		}
-		&__lucyCastillo {
-			background: url(../img/lucyCastillo.webp) no-repeat right center;
-    		background-size: cover;
 
-    		.lucyCastillo__content {
-				grid-column: 2/7;
-				grid-row: 2/3;
-				align-self: center;
-				justify-self: start;
+		// &__lucyCastillo {
+		// 	background: url(../img/lucyCastillo.webp) no-repeat right center;
+    	// 	background-size: cover;
 
-				h1 { font-weight: 700 }
-				p {
-					font-size: 1.25rem;
-					margin: 1rem 0;
-				}
+    	// 	.lucyCastillo__content {
+		// 		grid-column: 2/7;
+		// 		grid-row: 2/3;
+		// 		align-self: center;
+		// 		justify-self: start;
 
-				.writers__socialNetworks {
-				}
-			}
-		}
+		// 		h1 { font-weight: 700 }
+		// 		p {
+		// 			font-size: 1.25rem;
+		// 			margin: 1rem 0;
+		// 		}
+
+		// 		.writers__socialNetworks {
+		// 		}
+		// 	}
+		// }
 		
-		&__vanessaCano {
-			// background: url(../img/lucyCastillo.webp) no-repeat right center;
-    		// background-size: cover;
+		// &__vanessaCano {
+		// 	background: url(../img/lucyCastillo.webp) no-repeat right center;
+    	// 	background-size: cover;
 
-    		.vanessaCano__content {
-    			grid-column: 2/7;
-    			grid-row: 2/3;
-    			align-self: center;
-    			justify-self: start;
+    	// 	.vanessaCano__content {
+    	// 		grid-column: 2/7;
+    	// 		grid-row: 2/3;
+    	// 		align-self: center;
+    	// 		justify-self: start;
 
-    			h1 { font-weight: 700 }
-    			p {
-    				font-size: 1.25rem;
-    				margin: 1rem 0;
-    			}
+    	// 		h1 { font-weight: 700 }
+    	// 		p {
+    	// 			font-size: 1.25rem;
+    	// 			margin: 1rem 0;
+    	// 		}
 
-    			.writers__socialNetworks {
-    			}
-    		}
-		}
+    	// 		.writers__socialNetworks {
+    	// 		}
+    	// 	}
+		// }
 	}
 }

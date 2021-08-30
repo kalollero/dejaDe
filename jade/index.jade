@@ -59,16 +59,17 @@ html(lang='en')
 				div.book__logoBanner
 					img.home__logo(src="img/logoClaro.svg")
 					div.home__socialNetworks
-						a(href="")
-							i.fab.fa-facebook-square
-						a(href="")
-							i.fab.fa-instagram
-						a(href="")
-							i.fab.fa-youtube
+						//- a(href="")
+						//- 	i.fab.fa-facebook-square
+						//- a(href="")
+						//- 	i.fab.fa-instagram
+						//- a(href="")
+						//- 	i.fab.fa-youtube
 
 				div.book__title
 					//- img.title(src="img/title.svg")
-					h1 NO ES LO QUE 
+					h1 
+						| NO ES LO QUE 
 						br
 						| ESTÁS DISPUESTO
 						br
@@ -81,33 +82,32 @@ html(lang='en')
 						span A ELEGIR.
 
 					a.home__button(href="")
-						svg.svg-inline--fa.fa-long-arrow-right(aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512")
+						//- svg.svg-inline--fa.fa-long-arrow-right(aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512")
 							path(fill="currentColor" d="M311.03 131.515l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887l-83.928 83.444c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l116.485-116c4.686-4.686 4.686-12.284 0-16.971L328 131.515c-4.686-4.687-12.284-4.687-16.97 0z")
-						p.linkComprar
-							small COMPRAR
+						p.linkComprar LEER
 		
 			section.about#about
 				div.about__info
 					div
-						p Titulo
-						p ¿Y SI DEJAS DE HACERTE PENDEJ@?
+						p.about__anteTitulo Titulo
+						p.about__titulo ¿Y SI DEJAS DE HACERTE PENDEJ@?
 					div
-						p Autoras
-						p Lucy Castilo & Vanessa Cano
+						p.about__anteTitulo Autoras
+						p.about__titulo Lucy Castilo & Vanessa Cano
 					div
-						p Editorial
-						p Galaxia Literaria
+						p.about__anteTitulo Editorial
+						p.about__titulo Galaxia Literaria
 					div
-						p No. de páginas
-						p 108
+						p.about__anteTitulo No. de páginas
+						p.about__titulo 108
 					div
-						P Dimensiones
-						p 13.97 x 0.69 x 21.59 cm
+						P.about__anteTitulo Dimensiones
+						p.about__titulo 13.97 x 0.69 x 21.59 cm
 					div
-						p ISBN-13
-						p 979-8528581705
+						p.about__anteTitulo ISBN-13
+						p.about__titulo 979-8528581705
 					div
-						p Disponible en
+						p.about__anteTitulo Disponible en
 						div.about__stores
 							a(href="")
 								img.store__amazonOscuro(src="img/amazonOscuro.svg")
@@ -124,7 +124,7 @@ html(lang='en')
 		section.description#description
 			div.description__content
 				img.description__logoVerde(src="img/logoVerde.svg")
-				h2 Atrévete a correr el riesgo de ser verdaderamente tú.
+				h2.description__titulo Atrévete a correr el riesgo de ser verdaderamente tú.
 				div.description__summary
 					p Este libro te ofrece conceptos sobre diversos temas de reconocimiento personal, brindándote técnicas para poder 
 						em transformar tu realidad
@@ -149,7 +149,7 @@ html(lang='en')
 				div.description__line
 					div
 
-		section.video#video
+		//- section.video#video
 			//- img.video__play(src="img/play.svg")
 			iframe.video__autoras(src="https://www.youtube.com/embed/wB41SFS-KRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 		
@@ -164,7 +164,7 @@ html(lang='en')
 					P ESCRITORA
 					a BIO
 
-			div.writers__lucyCastillo
+			//- div.writers__lucyCastillo
 				div.lucyCastillo__content
 					h2 Lucy Castillo
 					p Es maestra en 
@@ -184,7 +184,7 @@ html(lang='en')
 							i.fab.fa-instagram
 
 			
-			div.writers__vanessaCano
+			//- div.writers__vanessaCano
 				div.vanessaCano__content
 					h2 Vanessa Cano
 					

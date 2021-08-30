@@ -8,6 +8,20 @@
 	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
+	@font-face {
+		font-family: 'alternate_gothic_no2';
+		src: url('../fonts/alternate_gothic_no2.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'alternate_gothic_no3';
+		src: url('../fonts/alternate_gothic_no3.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+	}
+
 //////// GENERALES ////////
 
 
@@ -26,7 +40,11 @@ html,body {
 	--verdeIntenso: #00C1A1;
 	--gray: #DBE2E9;
 
-	font-size: 16px;
+	--AG2: "alternate_gothic_no2";
+	--AG3: "alternate_gothic_no3";
+
+
+
 
 	@include sm {
 	}
@@ -107,7 +125,14 @@ em {
 	font-weight: 700; 
 	color: #00C1A1; 
 }
+//////// LINKS ////////
 
+a {
+	font-family: var(--AG3), sans-serif;
+	font-weight: 700;
+	font-size: 1.25rem;
+	letter-spacing: 1.5;
+}
 //////// ICONS ////////
 
 .svg-inline--fa.fa-w-14,
@@ -135,8 +160,15 @@ em {
 .store__gandhiClaro,
 .store__barnesClaro,
 .store__ibookClaro {
-	height: 2.75rem;
-	margin-left: 1rem;
+
+	@include sm {}
+
+	@include md {}
+
+	@include lg {
+		height: 3rem;
+		margin-left: 1rem;
+	}
 }
 
 ///////////////////////////////////////////////////
