@@ -164,13 +164,16 @@ a {
 .store__barnesClaro,
 .store__ibookClaro {
 
-	@include sm {}
+	@include sm {
+		height: 2.2rem;
+		margin: 0 .5rem .5rem 0;
+	}
 
 	@include md {}
 
 	@include lg {
 		height: 3rem;
-		margin-left: 1rem;
+		margin: 0 0 0 1rem;
 	}
 }
 
