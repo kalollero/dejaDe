@@ -4,17 +4,13 @@
 
 
 //////// IMPORT FONT ////////
-
+	// Fuente Playfair Display · 400 | 700 | 900
 	@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap');
+	
+	// Fuente Roboto · 400 | 700 | 900
 	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-	@font-face {
-		font-family: 'alternate_gothic_no2';
-		src: url('../fonts/alternate_gothic_no2.woff2') format('woff2');
-		font-weight: 400;
-		font-style: normal;
-	}
-
+	// Fuente Alternate Gothic 3 · 400
 	@font-face {
 		font-family: 'alternate_gothic_no3';
 		src: url('../fonts/alternate_gothic_no3.woff2') format('woff2');
@@ -43,8 +39,10 @@ html,body {
 	--fuenteH1: "alternate_gothic_no3";
 	--fuenteTitulos: "Roboto";
 	--fuenteTexto: "Playfair Display";
-	--fuenteBotones: "alternate_gothic_no3";
+	--fuenteBotones: "Roboto";
 
+	///// ERRORES //////////
+	--border: "1px dashed orange";
 
 
 

@@ -3,7 +3,61 @@
 	// min-height: 100vh;
 
 	@include sm {
-		
+		grid-template-rows: 4rem auto 0rem;
+
+		&__content {
+			grid-column: 2/6;
+			grid-row: 2/3;
+			display: grid;
+			grid-template-rows: repeat(4,auto);
+			place-items: start;
+		}
+
+			&__logoVerde {
+				grid-row: 1/2;
+				height: 10vh;
+			}
+					
+			&__summary p, &__titulo, &__autoras {
+
+				font-size: 1rem;
+				text-align: left;
+				margin-top: 1rem;
+			}
+
+			&__summary {
+				grid-row: 2/3;
+
+				em { color: var(--verdeIntenso); }
+			}
+
+			&__titulo { 
+				grid-row: 3/4;
+				font-style: italic;
+				font-weight: 700;
+				color: var(--verdeIntenso); 
+
+				font-family: var(--fuenteTexto), serif;
+			}
+			
+			&__autoras { 
+				grid-row: 4/5;
+				font-style: italic;
+				letter-spacing: 1.5;
+				margin-top: 2rem;
+
+				
+			}
+
+			&__line {
+				grid-row: 5/6;
+				width: 2px;
+				height: 20vh;
+				margin: 2rem 0 0;
+				background-color: var(--negro);
+
+				display: none;
+			}
 	}
 
 	@include md {
@@ -18,55 +72,39 @@
 		&__content {
 			grid-column: 5/11;
 			grid-row: 2/3;
-			display: grid;
 			grid-template-rows: repeat(5,auto);
 			place-items: center;
 		}
 		
-		&__logoVerde {
-				grid-row: 1/2;
-			height: 15vh;
-		}
-				
-		&__summary p, &__titulo, &__autoras {
-			font-family: 'Playfair Display', serif;
-			font-size: 1.5rem;
-			text-align: center;
-			margin-top: 1rem;
-		}
-
-		&__summary {
-			grid-row: 2/3;
-			p { 
-				font-size: 1.5rem; 
+			&__logoVerde {
+					grid-row: 1/2;
+				height: 15vh;
+			}
+					
+			&__summary p, &__titulo, &__autoras {
+				font-size: 1.5rem;
 				text-align: center;
-				margin-top: 1rem;
 			}
 
-			em { color: var(--verdeIntenso); }
-		}
+			&__summary { }
 
-		&__titulo { 
-			grid-row: 3/4;
-			font-style: italic;
-			font-weight: 700;
-			color: var(--verdeIntenso); 
-		}
-		
-		&__autoras { 
-			grid-row: 4/5;
-			font-style: italic;
-			letter-spacing: 1.5;
-			margin-top: 2rem;
-		}
+			&__titulo { }
+			
+			&__autoras { 
+				grid-row: 4/5;
+				font-style: italic;
+				letter-spacing: 1.5;
+				margin-top: 2rem;
+			}
 
+			&__line {
+				grid-row: 5/6;
+				width: 2px;
+				height: 20vh;
+				margin: 2rem 0 0;
+				background-color: var(--negro);
 
-		&__line {
-			grid-row: 5/6;
-			width: 2px;
-			background-color: var(--negro);
-			height: 20vh;
-			margin: 2rem 0 0;
-		}
+				display: inherit;
+			}
 	}
 }
