@@ -1,0 +1,11 @@
+.reviews {
+  @include sm {
+  }
+
+  @include md {
+  }
+
+  @include lg {
+    height: 100vh;
+  }
+}

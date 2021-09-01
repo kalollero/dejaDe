@@ -120,7 +120,9 @@ html(lang='en')
 
 			img.home__book(src="img/book.webp")
 
-				
+		section.video#video
+			video.video__autoras(src="../video/VideoResumenCorregido.mp4" controls poster="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+		
 		section.description#description
 			div.description__content
 				img.description__logoVerde(src="img/logoVerde.svg")
@@ -149,10 +151,6 @@ html(lang='en')
 				div.description__line
 					div
 
-		section.video#video
-			img.video__play(src="img/play.svg")
-			iframe.video__autoras(src="https://www.youtube.com/embed/wB41SFS-KRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-		
 		section.writers#writers
 			div.writers__nav
 				//- div.lucy__link
@@ -207,23 +205,23 @@ html(lang='en')
 						a(href="")
 							i.fab.fa-instagram
 
-		//- section.reviews#reviews
+		section.reviews#reviews
 		
 		section.stores#stores
 			div.stores__info
-				div.stores__title
+				h2.stores__title ¿Qué esperas
+					br
+					| para elegirlo?
 				div.stores__shop
-					p Disponible en
-					div.stores__content
-						a(href="https://www.amazon.com.mx/dp/B098BM85RN/ref=dp_kinw_strp_1")
-							img.store__amazonClaro(src="img/amazonClaro.svg")
-						a(href="https://www.gandhi.com.mx/y-si-dejas-de-hacerte-pendejat")
-							img.store__gandhiClaro(src="img/gandhiClaro.svg")
-						a(href="https://www.barnesandnoble.com/w/y-si-dejas-de-hacerte-pendej-lucy-castillo/1139758691?ean=2940164692001")
-							img.store__barnesClaro(src="img/barnesClaro.svg")
-						a(href="https://books.apple.com/mx/book/y-si-dejas-de-hacerte-pendej/id1574351932")
-							img.store__ibookClaro(src="img/ibookClaro.svg")
-		
+					a(href="https://www.amazon.com.mx/dp/B098BM85RN/ref=dp_kinw_strp_1")
+						img.store__amazonClaro(src="img/amazonClaro.svg")
+					a(href="https://www.gandhi.com.mx/y-si-dejas-de-hacerte-pendejat")
+						img.store__gandhiClaro(src="img/gandhiClaro.svg")
+					a(href="https://www.barnesandnoble.com/w/y-si-dejas-de-hacerte-pendej-lucy-castillo/1139758691?ean=2940164692001")
+						img.store__barnesClaro(src="img/barnesClaro.svg")
+					a(href="https://books.apple.com/mx/book/y-si-dejas-de-hacerte-pendej/id1574351932")
+						img.store__ibookClaro(src="img/ibookClaro.svg")
+	
 		footer.footer
 			img.footer__frase(src="img/fraseClaro.svg")
 			div.footer__nav

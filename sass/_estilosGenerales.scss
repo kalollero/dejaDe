@@ -21,9 +21,7 @@
 //////// GENERALES ////////
 
 
-html,body {
-	
-}
+html,body { }
 
 :root {
 	--verde: #00B3A1;
@@ -129,7 +127,7 @@ em {
 //////// LINKS ////////
 
 a {
-	font-family: var(--fuenteBotones), sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: 700;
 	font-size: 1.25rem;
 	letter-spacing: 1.5;
@@ -164,14 +162,12 @@ a {
 
 	@include sm {
 		height: 2.2rem;
-		margin: 0 .5rem .5rem 0;
 	}
 
 	@include md {}
 
 	@include lg {
 		height: 3rem;
-		margin: 0 0 0 1rem;
 	}
 }
 

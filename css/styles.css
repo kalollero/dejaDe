@@ -150,7 +150,7 @@ em {
 }
 
 a {
-  font-family: var(--fuenteBotones), sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: 1.5;
@@ -182,7 +182,6 @@ a {
 .store__barnesClaro,
 .store__ibookClaro {
     height: 2.2rem;
-    margin: 0 0.5rem 0.5rem 0;
   }
 }
 @media (min-width: 1024px) {
@@ -195,7 +194,6 @@ a {
 .store__barnesClaro,
 .store__ibookClaro {
     height: 3rem;
-    margin: 0 0 0 1rem;
   }
 }
 
@@ -257,7 +255,6 @@ a {
     -ms-grid-column-span: 4;
     grid-column: 2/6;
     height: 60vh;
-    width: auto;
     margin: 0 auto;
   }
   .home .book {
@@ -317,21 +314,31 @@ a {
     -ms-grid-column-span: 6;
     grid-column: 1/7;
   }
-  .home .about__info .about__anteTitulo {
+  .home .about__anteTitulo {
     font-weight: 700;
     font-style: italic;
     color: var(--negro);
     text-align: left;
     margin-top: 1rem;
   }
-  .home .about__info .about__titulo {
+  .home .about__titulo {
     font-family: var(--fuenteTitulos), sans-serif;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1;
     letter-spacing: 0.8;
     color: var(--blanco);
     font-size: 1.5rem;
     text-align: left;
+  }
+  .home .about__stores {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .home .about__stores img {
+    margin: 0 0.5rem 0.5rem 0;
   }
 }
 @media (min-width: 1024px) {
@@ -379,8 +386,8 @@ a {
   }
   .home .book__title {
     -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
-    grid-column: 2/7;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -444,11 +451,12 @@ a {
   }
   .home .about__info {
     -ms-grid-column: 2;
-    -ms-grid-column-span: 5;
-    grid-column: 2/7;
+    -ms-grid-column-span: 6;
+    grid-column: 2/8;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -463,21 +471,21 @@ a {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  .home .about__info .about__anteTitulo {
+  .home .about__anteTitulo {
     text-align: right;
   }
-  .home .about__info .about__titulo {
+  .home .about__titulo {
     text-align: right;
     font-size: 2rem;
   }
-  .home .about__info div.about__stores {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .home .about__stores {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-top: 4px;
+  }
+  .home .about__stores img {
+    margin: 0 0 0.5rem 0.5rem;
   }
   .home img.home__book {
     display: inherit;
@@ -614,32 +622,44 @@ a {
 
 /* -------- Video --------*/
 .video {
-  background-color: #000000;
+  background-color: black;
+}
+@media (min-width: 320px) {
+  .video {
+    width: 100%;
+  }
+  .video__autoras {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 4;
+    grid-column: 2/6;
+    width: 100%;
+  }
 }
 @media (min-width: 1024px) {
   .video {
     height: 100vh;
   }
-  .video__play {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 12;
-    grid-column: 2/14;
-    -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    width: 5vw;
-  }
   .video__autoras {
     -ms-grid-column: 2;
     -ms-grid-column-span: 12;
     grid-column: 2/14;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 }
 
 /* -------- Writers --------*/
+@media (min-width: 320px) {
+  .writers__nav {
+    background-image: url(../img/IMG-20210824-WA0000.jpg);
+    background-color: #1b35371a;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    min-height: 50vh;
+  }
+}
 @media (min-width: 1024px) {
   .writers__nav {
     height: 100vh;
@@ -648,12 +668,6 @@ a {
     grid-column-gap: 1rem;
   }
   .writers__nav {
-    background-image: url(../img/IMG-20210824-WA0000.jpg);
-    background-color: #1b35371a;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -698,6 +712,12 @@ a {
 }
 
 /* -------- Reviews --------*/
+@media (min-width: 1024px) {
+  .reviews {
+    height: 100vh;
+  }
+}
+
 /* -------- Stores --------*/
 @media (min-width: 1024px) {
   .stores {
@@ -718,32 +738,26 @@ a {
     -ms-grid-row-align: center;
         align-self: center;
   }
+  .stores__title {
+    font-family: var(--fuenteH1), sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--blanco);
+    margin-bottom: 2rem;
+  }
   .stores__shop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
-  .stores__shop h4 {
-    font-family: "Playfair Display", serif;
-    text-align: right;
-    font-style: italic;
-    color: var(--blanco);
-    margin-bottom: 1rem;
-  }
-  .stores__shop .stores__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .stores__shop img {
+    margin: 0 1rem 1rem 0;
   }
 }
 
@@ -784,6 +798,8 @@ a {
   }
   .footer__nav a {
     color: var(--blanco);
+    font-weight: 400;
+    font-size: 1rem;
   }
   .footer__nav div {
     color: var(--gray);
